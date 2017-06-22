@@ -1,804 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-        <title>CTA Math</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Central Toronto Mathematics</title>
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://dl.dropbox.com/s/z5xi31b0ki1y55t/materialize.css?dl=0" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link href="https://dl.dropbox.com/s/kt4pux1o9c1amu0/parallax-template.css?dl=0" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <style>
-            iframe
-            {
-            border: 0 none;
-            }
-            .hopingthismakeszero
-            {
-            margin-top: 0px;
-            }
-            .pushdownbannertitle
-            {
-            margin-top: 40px;
-            }
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+            <style>
+        html,body{
+  margin:0;
+  overflow:hidden;
+  height:100%
+}
+img{
+  width:100%;
+  max-width:350px;
+  position:absolute;
+  top:45%;
+  left:0;
+  right:0;
+  margin:0 auto
+}
+	.large-header{
+	background:linear-gradient(to bottom, #000000 0%,#483d8B 100%);
+    text-align:center
+	}
+#x-canvas{
+  opacity:0.9
+}
+a {
+  position:absolute;
+  top:55%;
+  left:0;
+  right:0;
+  margin:0 auto
+}
 
 </style>
+
     </head>
     <body>
-        <!--  FAB-->
-        <div class="fixed-action-btn" style="bottom: 20px; right: 20px;">
-            <a class="btn-floating btn-large deep-purple"><i class="large material-icons z-depth-2">person_add</i></a>
-            <ul>
-                <li>
-                    <a href="https://twitter.com/CTAMath" target="_blank" class="btn-floating blue"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ctamath" target="_blank" class="btn-floating amber"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:ctamath@gmail.com" target="_blank" class="btn-floating red"><i class="material-icons">mail</i></a>
-                </li>
-            </ul>
-        </div>
-        <!--  TOP Nav-->
-        <!--nav-->
-        <div class="navbar-fixed">
-            <nav class="white-text">
-                <div class="nav-wrapper grey white-text">
-                    <a href="#top-of-page" class="brand-logo white-text" style="font-size:25px">&nbsp; CTA Math</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse white-text"><i class="material-icons white-text">menu</i></a>
-                    <ul class="right hide-on-med-and-down white-text">
-                        <li class="white-text">
-                            <a href="#Courses" class="white-text">Courses<i class="material-icons tiny left">local_library</i></a>
-                        </li>
-                        <li>
-                            <a href="#Pathways" class="white-text">Plan<i class="material-icons tiny left">shuffle</i></a>
-                        </li>
-                        <li>
-                            <a href="#PreAP" class="white-text">Pre AP<i class="material-icons tiny left">lightbulb_outline</i></a>
-                        </li>
-                        <li>
-                            <a href="#AP_Calculus" class="white-text">AP Calculus<i class="material-icons tiny left">all_inclusive</i></a>
-                        </li>
-                        <li>
-                            <a href="#Technology" class="white-text">Technology<i class="material-icons tiny left">important_devices</i></a>
-                        </li>
-                        <li>
-                            <a href="#Calendar" class="white-text"><i class="fa fa-calendar"></i>&nbsp; Events</a>
-                        </li>
-                        <li>
-                            <a href="#Communicate" class="white-text">Contact<i class="material-icons tiny left">people</i></a>
-                        </li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li>
-                            <a href="#Courses">Courses<i class="material-icons tiny left">local_library</i></a>
-                        </li>
-                        <li>
-                            <a href="#Pathways">Plan<i class="material-icons tiny left">shuffle</i></a>
-                        </li>
-                        <li>
-                            <a href="#PreAP">Pre AP<i class="material-icons tiny left">lightbulb_outline</i></a>
-                        </li>
-                        <li>
-                            <a href="#AP_Calculus">AP Calculus<i class="material-icons tiny left">all_inclusive</i></a>
-                        </li>
-                        <li>
-                            <a href="#Technology">Technology<i class="material-icons tiny left">important_devices</i></a>
-                        </li>
-                        <li>
-                            <a href="#Calendar">&nbsp; <i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;  Events</a>
-                        </li>
-                        <li>
-                            <a href="#Communicate">Contact<i class="material-icons tiny left">people</i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!--endnav-->
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot" id="top-of-page">
-                <div class="row " style="margin-top: 40px; margin-bottom: 50px">
-                    <div class="col zeropadding zeroborderetc push-m1 push-l1 right-align l5 offset-m0 push-s1 pushdownbannertitle m6 s10">
-                        <img class="left-align" src="https://dl.dropbox.com/s/b0bjkxlpp8rsly8/Math-CTA.png?dl=0" width="100%" />
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" id="Courses">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center flow-text">
-                        <h3><i class="medium material-icons">local_library</i></h3>
-                        <h3>Courses &amp; Curriculum</h3>
-                        Click any box for Grade and Course information and Outlines
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row zeroborderetc lighten-3 white">
-            <div class="col s12 l3 m6">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text center-align white-text darken-2 red">
-                            <b>Grade 9</b>
-                        </div>
-                        <div class="collapsible-body">
-                            <p class="white">Selecting the Grade 9 Math course that is right for you can be challenging. The Course Outlines and Curriculum Documentation for each course is available for download below, however we also recommend you view the Pathways section for course comparisons and selection information.<br /><br /><a href="http://www.edu.gov.on.ca/eng/curriculum/secondary/math910curr.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>9 Curriculum</a></p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header">
-                            MPM1D3: Pre-AP Academic
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course covers all of the curriculum encountered in the Grade 9 Academic Math course(please see details below) but programming provides advanced instruction and curricula that provides opportunity for early skill acquisition and an enriched learning experience overall. Pre-AP courses provide support for skill development necessary for success in AP level courses taken in grade 12. However, at CTA Pre-AP courses also provide opportunity for early skill acquisition and an enriched learning experience overall. More information can be found on the Pre-AP page.<br /><br /><a href="https://drive.google.com/open?id=0B_vug18TgWSxbDdVZ3Q3YzM5R0E" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MPM1D: Academic
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to develop an understanding of mathematical concepts related to algebra, analytic geometry, and measurement and geometry through investigation, the effective use of technology, and abstract reasoning. Students will investigate relationships, which they will then generalize as equations of lines, and will determine the connections between different representations of a linear relation. They will also explore relationships that emerge from the measurement of three-dimensional figures and two-dimensional shapes. Students will reason mathematically and communicate their thinking as they solve multi-step problems.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxbDdVZ3Q3YzM5R0E" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MFM1P: Applied
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to develop an understanding of mathematical concepts related to introductory algebra, proportional reasoning, and measurement and geometry through investigation, the effective use of technology, and hands-on activities. Students will investigate real-life examples to develop various representations of linear relations, and will determine the connections between the representations. They will also explore certain relationships that emerge from the measurement of three-dimensional figures and two-dimensional shapes. Students will consolidate their mathematical skills as they solve problems and communicate their thinking.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxZ3Z2RkprU1B6Vk0" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MAT1L: Locally Developed
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course emphasizes further development of mathematical knowledge and skills to prepare students for success in their everyday lives, in the workplace, in the Grade 10 Locally Developed Compulsory Credit course and in the Mathematics Grade 11 and Grade 12 Workplace Preparation courses. The course is organized by three strands related to money sense, measurement, and proportional reasoning. In all strands, the focus is on developing and consolidating key foundational mathematical concepts and skills by solving authentic, everyday problems. Students have opportunities to further develop their mathematical literacy and problem-solving skills and to continue developing their skills in reading, writing, and oral language through relevant and practical math activities.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxSV83OHpaMHVvTGc" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 l3 m6">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text center-align white-text darken-2 orange">
-                            <b>Grade 10</b>
-                        </div>
-                        <div class="collapsible-body">
-                            <p class="white">Selecting the Grade 10 Math course that is right for you can be challenging.&nbsp;The Course Outlines and Curriculum Documentation for each course is available for download below, however we also recommend you view the Pathways section of this site for information on how courses are connected throughout different grades.<br><br><a href="http://www.edu.gov.on.ca/eng/curriculum/secondary/math910curr.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>10 Curriculum</a></p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header">
-                            MPM2D3: Pre-AP Academic
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course covers all of the curriculum encountered in the Grade 10 Academic Math course(please see details below) but programming provides advanced instruction and curricula that provides opportunity for early skill acquisition and an enriched learning experience overall. Pre-AP courses provide support for skill development necessary for success in AP level courses taken in grade 12. However, at CTA Pre-AP courses also provide opportunity for early skill acquisition and an enriched learning experience overall. More information can be found on the Pre-AP page.<br /><br /><a href="https://drive.google.com/open?id=0B_vug18TgWSxYWxhY2VUbmYxaFk" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MPM2D: Academic
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to broaden their understanding of relationships and extend their problem-solving and algebraic skills through investigation, the effective use of technology, and abstract reasoning. Students will explore quadratic relations and their applications; solve and apply linear systems; verify properties of geometric figures using analytic geometry; and investigate the trigonometry of right and acute triangles. Students will reason mathematically and communicate their thinking as they solve multi-step problems.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxYWxhY2VUbmYxaFk" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MFM2P: Applied
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to consolidate their understanding of linear relations and extend their problem-solving and algebraic skills through investigation, the effective use of technology, and hands-on activities. Students will develop and graph equations in analytic geometry; solve and apply linear systems, using real-life examples; and explore and interpret graphs of quadratic relations. Students will investigate similar triangles, the trigonometry of right triangles, and the measurement of three-dimensional figures. Students will consolidate their mathematical skills as they solve problems and communicate their thinking.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxWEx6Sk00SlJZT28" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MAT2L: Locally Developed
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course emphasizes the extension of mathematical knowledge and skills to prepare MAT1L students for success in their everyday lives, in the workplace, and in the Mathematics Grade 11 and Grade 12 Workplace Preparation courses. This course is organized by three strands related to money sense, measurement, and proportional reasoning. In all strands, the focus is on strengthening and extending key foundational mathematical concepts and skills by solving authentic, everyday problems. Students have opportunities to extend their mathematical literacy and problem-solving skills and to continue developing their skills in reading, writing and oral language through relevant and practical math activities.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxWUI1d2ZLNVFZYkE" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 l3 m6">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text center-align white-text darken-2 green">
-                            <b>Grade 11</b>
-                        </div>
-                        <div class="collapsible-body">
-                            <p class="white">Selecting the Grade 11 Math course that is right for you can be challenging.&nbsp;The Course Outlines and Curriculum Documentation for each course is available for download below, however we also recommend you view the Pathways section of this site for information on how courses are connected throughout different grades.<br><br><a href="http://www.edu.gov.on.ca/eng/curriculum/secondary/math1112currb.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>11 Curriculum</a></p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header">
-                            MCR3U3: Pre-AP Functions
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course covers all of the curriculum encountered in the MCR3U course(please see details below) but programming provides advanced instruction and curricula that provides opportunity for early skill acquisition and an enriched learning experience overall. Pre-AP courses provide support for skill development necessary for success in AP level courses taken in grade 12. However, at CTA Pre-AP courses also provide opportunity for early skill acquisition and an enriched learning experience overall. More information can be found on the Pre-AP page.<br /><br /><a href="https://drive.google.com/open?id=0B_vug18TgWSxc3ZOSDd3bTd3TUU" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MCR3U: Functions
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course introduces the mathematical concept of the function by extending students’ experiences with linear and quadratic relations. Students will investigate properties of discrete and continuous functions, including trigonometric and exponential functions; represent functions numerically, algebraically, and graphically; solve problems involving applications of functions; investigate inverse functions; and develop facility in determining equivalent algebraic expressions. Students will reason mathematically and communicate their thinking as they solve multi-step problems.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxc3ZOSDd3bTd3TUU" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MBF3C: College Foundations
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to broaden their understanding of mathematics as a problem solving tool in the real world. Students will extend their understanding of quadratic relations; investigate situations involving exponential growth; solve problems involving&nbsp;compound interest; solve financial problems connected with vehicle ownership; develop their ability to reason by collecting, analysing, and evaluating data involving one variable; connect probability and statistics; and solve problems in geometry and trigonometry.&nbsp;Students will consolidate their mathematical skills as they solve problems and communicate their thinking.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxLWJYOVlpS2xwb2s" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MEL3E: Work &amp; Everyday Life
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to broaden their understanding of mathematics as it is applied in the workplace and daily life. Students will solve problems associated with earning money, paying taxes, and making purchases; apply calculations of simple and compound interest in saving, investing, and borrowing; and calculate the costs of transportation and travel in a variety of situations. Students will consolidate their mathematical skills as they solve problems and communicate their thinking.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxV21JMDlfcmdLaGc" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 l3 m6">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text center-align white-text darken-2 blue">
-                            <b>Grade 12</b>
-                        </div>
-                        <div class="collapsible-body">
-                            <p class="white">Selecting the Grade 12 Math course that is right for you can be challenging. The Course Outlines and Curriculum Documentation for each course is available for download below, however we also recommend you view the Pathways section of this site for information on how Grade 12 Math courses are related to a number of popular University programs in Ontario.<br /><br /><a href="http://www.edu.gov.on.ca/eng/curriculum/secondary/math1112currb.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>12 Curriculum</a></p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header">
-                            MCV4U: Calculus &amp; Vectors
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course builds on students’ previous experience with functions and their developing
-understanding of rates of change. Students will solve problems involving geometric and
-algebraic representations of vectors and representations of lines and planes in threedimensional
-space; broaden their understanding of rates of change to include the
-derivatives of polynomial, sinusoidal, exponential, rational, and radical functions; and
-apply these concepts and skills to the modelling of real-world relationships. Students
-will also refine their use of the mathematical processes necessary for success in senior
-mathematics. This course is intended for students who choose to pursue careers in fields
-such as science, engineering, economics, and some areas of business, including those
-students who will be required to take a university-level calculus, linear algebra, or
-physics course.<br /><br /><a href="https://drive.google.com/open?id=0B_vug18TgWSxWGQtSW1NdTg5TVE" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MHF4U: Advanced Functions
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course extends students’ experience with functions. Students will investigate the
-properties of polynomial, rational, logarithmic, and trigonometric functions; develop
-techniques for combining functions; broaden their understanding of rates of change; and
-develop facility in applying these concepts and skills. Students will also refine their use
-of the mathematical processes necessary for success in senior mathematics. This course
-is intended both for students taking the Calculus and Vectors course as a prerequisite
-for a university program and for those wishing to consolidate their understanding of
-mathematics before proceeding to any one of a variety of university programs.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxRDk4WkprejZwS2M" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MDM4U: Data Management
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course broadens students’ understanding of mathematics as it relates to managing data. Students will apply methods for organizing and analysing large amounts of information; solve problems involving probability and statistics; and carry out a&nbsp;culminating investigation that integrates statistical concepts and skills. Students will also refine their use of the mathematical processes necessary for success in senior mathematics. Students planning to enter university programs in business, the social sciences, and the humanities will find this course of particular interest.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxYUQ2M1F3M2oxa2M" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            MAP4C: College Foundations
-</div>
-                        <div class="collapsible-body">
-                            <p class="white">This course enables students to broaden their understanding of real-world applications of mathematics. Students will analyse data using statistical methods; solve problems involving applications of geometry and trigonometry; solve financial problems connected with annuities, budgets, and renting or owning accommodation; simplify&nbsp;expressions; and solve equations. Students will reason mathematically and communicate their thinking as they solve multi-step problems. This course prepares students for college programs in areas such as business, health sciences, and human services, and for certain skilled trades.<br><br><a href="https://drive.google.com/open?id=0B_vug18TgWSxZDNOR2pIWHVyRDg" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row zeroborderetc lighten-3 white">
-            <div class="col s12 offset-s0 m6 l6 offset-m3 offset-l3">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text center-align white-text purple">
-                            <b>Advanced Placement Calculus</b>
-                        </div>
-                        <div class="collapsible-body">
-                            <p>Advanced Placement(AP) Calculus is equivalent to a first semester university calculus course. At Central Toronto Academy this course is taken after MCV4U. For detailed information please scroll to the AP Calculus section of this site.<br><br><a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-calculus-ab-and-bc-course-and-exam-description.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Curriculum</a>&nbsp;<a href="http://media.collegeboard.com/digitalServices/pdf/ap/ap-course-overviews/ap-calculus-ab-course-overview.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="Pathways">
-                        <h4 class="header col s12 light">Plan courses by understanding course connections</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center">
-                        <h3><i class="material-icons medium">shuffle</i></h3>
-                        <h3>Plan</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row zeroborderetc lighten-3 white">
-            <div class="col white-text s12 m4 l4 offset-m0 offset-l0 offset-s0">
-                <div class="card-panel grey">
-                    <h4 class="center-align">Grade 9 Math</h4>
-                    <p>Which math course is right for you? This brochure shows a quick comparison between different Grade 9 Math courses.</p>
-                    <img class="materialboxed" width="100%" src="https://dl.dropbox.com/s/kkgqhwrjccfmiyg/Grade%209%20Brochure%20Web%20Image%20Version%202.jpg?dl=0" />
-                    <br>
-                    <a href="https://dl.dropbox.com/s/kkgqhwrjccfmiyg/Grade%209%20Brochure%20Web%20Image%20Version%202.jpg?dl=0" target="_blank" class="waves-effect waves-light large btn darken-2 blue center-block"><i class="material-icons left">filter_9_plus</i>Grade 9 Math Courses</a>
-                </div>
-            </div>
-            <div class="col offset-m0 offset-l0 m4 l4 s12 offset-s0">
-                <div class="card-panel grey white-text">
-                    <h4 class="center-align">Course Connections</h4>
-                    <p>How are courses connected throughout grade levels? This poster illustrates the most common course connections.</p>
-                    <img class="materialboxed" width="100%" src="https://dl.dropbox.com/s/h32t9umeud7s87p/CTA_Math_Pathways2_web2016.jpg?dl=0">
-                    <br>
-                    <a href="https://dl.dropbox.com/s/h32t9umeud7s87p/CTA_Math_Pathways2_web2016.jpg?dl=0" target="_blank" class="waves-effect waves-light large btn darken-2 blue center-block"><i class="material-icons left">shuffle</i>Course Connections</a>
-                </div>
-            </div>
-            <div class="col white-text offset-l0 m4 offset-m0 offset-s0 s12 l4">
-                <div class="card-panel grey">
-                    <h4 class="center-align">University Programs</h4>
-                    <p>Which grade 12 Math courses are needed for popular University programs in Ontario? This chart provides a quick summary.</p>
-                    <img class="materialboxed" width="100%" src="https://dl.dropbox.com/s/ewz6b5kjz76xy53/Ontario%204U%20Math%20Prerequisites.jpg?dl=0">
-                    <br>
-                    <a href="https://dl.dropbox.com/s/bn5qslwjmmo85ix/Ontario_University_12U_Math_%20Req-2015.pdf?dl=0" target="_blank" class="waves-effect waves-light large btn darken-2 blue center-block"><i class="material-icons left">school</i>University Programs</a>
-                </div>
-            </div>
-        </div>
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="PreAP">
-                        <h4 class="header col s12 light">Pre Advanced Placement enriches learning</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center">
-                        <h3><i class="material-icons medium">lightbulb_outline</i></h3>
-                        <h3>Pre Advanced Placement</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row zeroborderetc lighten-3 white">
-            <div class="col white-text offset-l0 l6 s12 m12 offset-m0 offset-s0">
-                <div class="card-panel grey">
-                    <h4>Why Pre Advanced Placement?<br></h4>
-                    <p>Pre-Advanced Placement (Pre-AP) programming provides advanced instruction and curricula in lower grades that challenges students to develop their understanding and skills acquisition as early as possible.&nbsp;Pre-AP courses provide support for skill development
-necessary for success in AP level courses taken in grade 12.&nbsp;<br></p>
-                </div>
-                <div class="slider" data-slider>
-                    <ul class="slides">
-                        <li>
-                            <img src="https://dl.dropbox.com/s/0mv1h3ky380ws68/ap-preap.jpg?dl=0">
-                            <div class="caption right-align">
-                                <h3><b>AP and Pre-AP Mentorship</b></h3>
-                                <h5 class="light grey-text text-lighten-3"><b>Sharing problem solving strategies</b></h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="https://dl.dropbox.com/s/iu5adzc98kx5kry/ap-preap3.jpg?dl=0">
-                            <div class="caption left-align">
-                                <h3><b>AP and Pre-AP Mentorship</b></h3>
-                                <h5 class="light grey-text text-lighten-3"><b>Testing different strategies</b></h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="https://dl.dropbox.com/s/pl3oi0kl5fj8cun/ap-preap2.jpg?dl=0">
-                            <div class="caption center-align">
-                                <h3><b>AP and Pre-AP Mentorship</b></h3>
-                                <h5 class="light grey-text text-lighten-3"><b>Making personal connections</b></h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="https://dl.dropbox.com/s/6o4zww3nnwmx45y/ap-preap4.jpg?dl=0">
-                            <div class="caption center-align">
-                                <h3><b>AP and Pre-AP Mentorship</b></h3>
-                                <h5 class="light grey-text text-lighten-3"><b>Collaboration!</b></h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col white-text offset-l0 l6 offset-m0 s12 offset-s0 m12">
-                <div class="card-panel grey">
-                    <h4>Pre Advanced Placement at Central Toronto Academy</h4>
-                    <p>Pre-Advanced Placement (Pre-AP) programming provides advanced instruction and curricula in lower grades that challenges students to
-        develop their understanding and skills acquisition as early as possible.&nbsp;Pre-AP courses at CTA introduce advanced concepts at an earlier stage and provide a wider range of concept and skill development opportunities throughout all grades. Pre-AP courses at CTA develop reflective and critical learning skills that provide the foundation upon which enriched learning is based. The Pre-AP learning environment encourages an open and flexible learning environment that supports:</p>
-                    <li>
-                        group work
-</li>
-                    <li>
-                        exploration
-</li>
-                    <li>
-                        technological innovation
-</li>
-                    <li>
-                        reflective and recursive design opportunities
-</li>
-                    <li>
-                        challenging and rewarding subject matter
-</li>
-                    <li>
-                        intercurricular and extracurricular learning experiences
-</li>
-                    <li>
-                        mentorship with senior AP students
-</li>
-                    <p>Pre-AP enrichment at CTA does not simply offer advanced knowledge and skill acquisition. Rather, advanced knowledge and skill acquisition is a direct by-product of an enriched learning environment. &nbsp;</p>
-                </div>
-            </div>
-        </div>
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="AP_Calculus">
-                        <h4 class="header col s12 light">Advanced Placement Calculus is rigorous and engaging</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center">
-                        <h3><i class="material-icons medium">all_inclusive</i></h3>
-                        <h3>Advanced Placement Calculus</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row zeroborderetc">
-            <div class="col s12 m4 l4 zeroborderetc">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://dl.dropbox.com/s/4agk5pjo3o1vka8/AP%20-%20What%20is%20AP.jpg?dl=0">
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Advanced Placement<i class="material-icons right">close</i></span>
-                        <a href="http://apcentral.collegeboard.com/home">Advanced Placement(AP)</a> is a program which offers university-level curricula and examinations to high school students. Many colleges and universities grant placement and course credit to students who obtain high scores on the examinations. The AP curriculum for each of the various subjects is created for the
-                        <a href="https://www.collegeboard.org/">AP College Board</a> by a panel of experts and university level educators.
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4 zeroborderetc">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://dl.dropbox.com/s/l7mtjejq6unx2ni/Ap%20Calculus%202%20-%20What%20is%20AP%20Calculus.jpg?dl=0">
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">AP Calculus<i class="material-icons right">close</i></span>
-                        AP Calculus is equivalent to a first semester university calculus course devoted to topics in differential and integral calculus including the Fundamental Theorem of Calculus. Concepts and problems are represented graphically, numerically, analytically, and verbally, and connections are made amongst these representations. Technology is used to help solve problems, experiment, interpret results, and support conclusions.
-                        <br>
-                        <br>
-                        <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-calculus-ab-and-bc-course-and-exam-description.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Curriculum</a>&nbsp;
-                        <br>
-                        <br>
-                        <a href="http://media.collegeboard.com/digitalServices/pdf/ap/ap-course-overviews/ap-calculus-ab-course-overview.pdf" target="_blank" class="waves-effect waves-light btn darken-2 blue"><i class="material-icons left">cloud_download</i>Course Outline</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4 zeroborderetc">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://dl.dropbox.com/s/6lg4a80jr4nkj02/Ap%20Calculus%20Application%202.jpg?dl=0">
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">AP Calculus Application<i class="material-icons right">close</i></span>
-                        At CTA we look to those taking AP courses to demonstrate:
-                        <br>
-                        <li>
-                            Leadership
-</li>
-                        <li>
-                            Teamwork
-</li>
-                        <li>
-                            Cooperation
-</li>
-                        <li>
-                            Mentorship
-</li>
-                        These qualities form an integral part of the learning process and the course itself.&nbsp;Entrance to the AP Calculus course has several requirements, including a short application form that each prospective student must complete and which provides us with a picture of each applicant's aptitudes, motivations, and goals.
-                        <br>
-                        <br />
-                        <a href="https://goo.gl/forms/pQ7WBBNLm3xTFJp32" target="_blank" class="waves-effect waves-light btn green"><i class="material-icons left">cloud_upload</i>Application Form</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row zeroborderetc lighten-3 white">
-            <div class="col s12 m4 l4">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text grey">
-                        <h4>Why AP?</h4>
-                        <p>AP accreditation is recognized internationally and many universities grant course credit and advanced program placement for students who score well on the examination. Ninety percent of universities in North America and over sixty countries outside of North America recognize and provide course credit for successful AP course results.</p>
-                        <!--Brochure End-->
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text grey">
-                        <h4>AP Calculus at CTA</h4>
-                        <p>The AP Calculus course offered at Central Toronto Academy develops rigour and direct application to a variety of fields of study for which an understanding of Calculus is critical. Advanced principles, techniques, and enriched programming ensure that students taking AP Calculus enjoy a distinct advantage upon entry into university study.<br></p>
-                        <!--Brochure End-->
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text grey">
-                        <h4>AP and Pre-AP at CTA</h4>
-                        <p>Pre-AP math courses leading up to AP Calculus foster a strong foundation for success with advanced topics commonly encountered in AP Calculus. Students interested in AP Calculus require bespoke timetable construction. Therefore consultation with the Math Department and Student Services for course planning is required.&nbsp;<br></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Technology-->
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="Technology">
-                        <h4 class="header col s12 light">Technology has the power to enrich your understanding</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center flow-text">
-                        <h3><i class="material-icons medium">important_devices</i></h3>
-                        <h3>Technology</h3>
-                        We use and recommend the following applications:
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row padding0px margin0px zeroborderetc zeropadding">
-            <div class="col s12 m12 l12">
-                <div class="card lighten-2 center-align">
-                    <br>
-                    <div class="row">
-                        <div class="col s12 l6 m12">
-                            <a href="https://www.desmos.com/">
-                                <img src="https://dl.dropbox.com/s/s0lx8da4xet9sgv/desmos%20logo.png?dl=0g" width="50%" class="center-align">
-                            </a>
-                            <p class="left-align flow-text"><a href="https://www.desmos.com/">Desmos</a> is a powerful, dynamic, and interactive algebraic graphing program. It is free and is available as a Browswer app, in dedicated App form for both iOS and Android, and as a Chrome Add-On.&nbsp;Desmos interacts dynamically; change one aspect and everything changes along with it.&nbsp;</p>
-                        </div>
-                        <div class="col s12 l6 m12">
-                            <br>
-                            <img src="https://dl.dropbox.com/s/r8ubwlcjyidnidz/movabelline.gif?dl=0" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row padding0px margin0px zeroborderetc zeropadding">
-            <div class="col s12 m12 l12">
-                <div class="card lighten-2 center-align">
-                    <br>
-                    <div class="row">
-                        <div class="col s12 l6 m12">
-                            <a href="https://www.geogebra.org">
-                                <img src="https://static.geogebra.org/images/geogebra-logo-name.svg" width="60%" class="center-align">
-                            </a>
-                            <p class="left-align flow-text"><a href="https://www.geogebra.org/">Geogebra</a> is another powerful, dynamic, and interactive algebraic graphing program that tends to more focused on direct geometry manipulation. It is also free and available in Browser, Chrome Add-On, and App forms both for iOS and Android.</p>
-                        </div>
-                        <div class="col s12 l6 m12">
-                            <iframe src="https://tube.geogebra.org/material/iframe/id/7100/width/1213/height/491/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="100%" style="min-height:300px" center-align align="center"> </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Calendar-->
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="Calendar">
-                        <h4 class="header col s12 light">Events Calendar</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center flow-text">
-                        <h3><i class="fa fa-calendar"></i></h3>
-                        <h3>Events</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row padding0px margin0px zeroborderetc zeropadding">
-            <div class="col s12 m12 l12">
-                <div class="col s12 m12 l12">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=ctamath%40gmail.com&ctz=America/Toronto" style="min-height:300px" width="100%" height="500px" frameborder="0" scrolling="no" class="cemter-block"></iframe>
-                </div>
-            </div>
-        </div>
-        <!--Contacts-->
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center" id="Communicate">
-                        <h4 class="header col s12 light">Contact Networks</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 2">
-            </div>
-        </div>
-        <div class="container">
-            <div class="section zeroborderetc">
-                <div class="row zeroborderetc">
-                    <div class="col s12 center flow-text">
-                        <h3><i class="material-icons medium">people</i></h3>
-                        <h3>Contact</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row ">
-                <div class="col l3 s12 m6">
-                    <h5 class="black-text">Partner Sites</h5>
-                    <a href="http://schools.tdsb.on.ca/centraltorontoacademy/" class="waves-effect waves-light btn left-align purple">CTA Home Page&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://sites.google.com/site/ctaguidance/" class="waves-effect waves-light btn left-align blue text-darken-2">CTA Guidance&nbsp;&nbsp;<i class="fa fa-universal-access" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://sites.google.com/site/ctascience/" class="waves-effect waves-light btn pink">CTA Science&nbsp;&nbsp;<i class="fa fa-flask" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="http://www.tdsb.on.ca/" class="waves-effect waves-light btn green">TDSB&nbsp;&nbsp;<i class="fa fa-fort-awesome" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://www.math.toronto.edu/" class="waves-effect waves-light btn amber">UofT Math&nbsp;&nbsp;<i class="fa fa-superscript" aria-hidden="true"></i></a>
-                </div>
-                <div class="col l3 s12 m6">
-                    <h5 class="black-text">Teacher Sites</h5>
-                    <a href="https://sites.google.com/a/tdsb.on.ca/mrgleesoncta/" target="_blank" class="waves-effect waves-light btn blue darken-2">Mr. Gleeson&nbsp;&nbsp;<i class="fa fa-check-circle-o" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://sites.google.com/a/tdsb.on.ca/mrtangcta/" target="_blank" class="waves-effect waves-light btn text-lighten-3 blue darken-2">Mr. Tang &nbsp;&nbsp;<i class="fa fa-check-circle-o" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://sites.google.com/site/mratkinscta/" target="_blank" class="waves-effect waves-light btn text-lighten-3 blue darken-2">Mr. Atkins &nbsp;&nbsp;<i class="fa fa-check-circle-o" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="#" target="_blank" class="waves-effect waves-light btn text-lighten-3 blue darken-2">Ms. Agnihotri &nbsp;&nbsp;<i class="fa fa-check-circle-o" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="#" target="_blank" class="waves-effect waves-light btn text-lighten-3 blue darken-2">Mr. Solomon &nbsp;&nbsp;<i class="fa fa-check-circle-o" aria-hidden="true"></i></a>
-                </div>
-                <div class="col l3 s12 m6">
-                    <h5 class="black-text">Social Media</h5>
-                    <a href="https://twitter.com/CTAMath" target="_blank" class="waves-effect waves-light btn light-blue">@CTAMath &nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://instagram.com/CTAMath" target="_blank" class="waves-effect waves-light btn brown">@CTAMath &nbsp;&nbsp;<i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://twitter.com/cta_tweets" target="_blank" class="waves-effect waves-light btn light-blue">@CTA_Tweets&nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://twitter.com/CTAScience" target="_blank" class="waves-effect waves-light btn light-blue text-lighten-3">@CTAScience &nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <p></p>
-                    <a href="https://twitter.com/CTAGuidance" target="_blank" class="waves-effect waves-light btn light-blue text-lighten-3">@CTAGuidance &nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <div class="col l3 s12 m6">
-                    <a class="twitter-timeline" href="https://twitter.com/CTAMath" data-widget-id="493968895774953473" data-chrome="nofooter noborders">Tweets by @CTAMath</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-            </div>
-        </div>
-        <!--End Desmos-->
-        <!--End Geogebra-->
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <h4 class="header col s12 light">Central Toronto Academy<br>Artistic . Academic . Athletic</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax">
-                <img src="https://dl.dropbox.com/s/ry0ag9rails69n2/geometric-wallpaper-19.jpg?dl=0" alt="Unsplashed background img 3">
-            </div>
-        </div>
-        <footer class="page-footer grey">
-            <div class="row">
-                <div class="col m4 l4 s8 push-m1 push-l1 push-s1">
-                    <h5 class="white-text"><a href="http://schools.tdsb.on.ca/centraltorontoacademy/" class="text-darken-3 deep-purple-text">Central Toronto Academy</a><br></h5>
-                    <ul>
-                        <li>
-                            <a class="white-text" href="https://goo.gl/maps/wWk1kheCDs92">Address: 570 Shaw St, Toronto, ON M6G 3L6</a>
-                        </li>
-                        <li class="white-text">Phone: (416) 393-0030
-</li>
-                        <li>
-                            <a class="white-text" href="#!">email: centraltorontoacademy@tdsb.on.ca</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="#!">Fax: (416) 393-0049</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s10 l6 m6 push-m1 push-l1 push-s1">
-                    <p><iframe id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.1715593899335!2d-79.42223377352322!3d43.656785697509065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34f420c15a75%3A0x2e218d188efd39c2!2s570+Shaw+St!5e0!3m2!1sen!2s!4v1404014754863" width="100%" scrolling="no" marginheight="0" frameborder="0" style="border:0; margin:0; padding:0;"></iframe></p>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="row">
-                    <div class="col s12 m4 l4">
-                        Made with love &
-                        <a class="brown-text text-lighten-3" href="https://dl.dropbox.com/s/d7wgj52y80j8b5y/Maths-Man-HD-Wallpapers.jpg?dl=0">Mathematics</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--  Scripts-->
-        <script src="https://use.fontawesome.com/77296eadb9.js"></script>
-        <script src="https://dl.dropbox.com/s/sotr0tqvdx0ggrj/jquery.min.js?dl=0"></script>
-        <script src="https://dl.dropbox.com/s/jepsg0hp3intlzk/materialize.js?dl=0"></script>
-        <script src="https://dl.dropbox.com/s/iup12u4l4da99pi/parallax-template.js?dl=0"></script>
-        <script src="https://dl.dropbox.com/s/0tvftfk8ag96682/index.js?dl=0"></script>
+      <div id="large-header" class="large-header">
+           <img src="https://www.dl.dropboxusercontent.com/s/s66rfk4906x7ye3/ctamathwhite3.png" alt="" />
+
+               <a href="https://sites.google.com/tdsb.on.ca/ctamath" id="download-button" class="btn-large waves-effect waves-light pink darken-1">We've Moved</a>
+
+           <canvas id="x-canvas"></canvas>
+      </div>
+      <!-- Materialize core JavaScript -->
+      <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.rawgit.com/greensock/GreenSock-JS/94c5d3100f78656c3a336ff1080ce22fba63394d/src/uncompressed/TweenMax.js"></script>
+
+
+      <script>
+      // MIT license
+  // By @nodws with github.com/greensock/GreenSock-JS, see more examples at greensock.com/examples-showcases
+  	(function() {
+  		var lastTime = 0;
+  		var vendors = ['ms', 'moz', 'webkit', 'o'];
+  		for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+  			window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+  			window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+  				|| window[vendors[x]+'CancelRequestAnimationFrame'];
+  		}
+
+  		if (!window.requestAnimationFrame)
+  			window.requestAnimationFrame = function(callback, element) {
+  				var currTime = new Date().getTime();
+  				var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+  				var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+  					timeToCall);
+  				lastTime = currTime + timeToCall;
+  				return id;
+  			};
+
+  		if (!window.cancelAnimationFrame)
+  			window.cancelAnimationFrame = function(id) {
+  				clearTimeout(id);
+  			};
+  	}());
+
+
+  	(function() {
+
+      var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+
+      // Main
+      initHeader();
+      initAnimation();
+      addListeners();
+
+      function initHeader() {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          target = {x: width/2, y: height/2};
+
+          largeHeader = document.getElementById('large-header');
+
+        largeHeader.style.height = height+'px';
+
+          canvas = document.getElementById('x-canvas');
+          canvas.width = width;
+          canvas.height = height;
+          ctx = canvas.getContext('2d');
+
+          // create points
+          points = [];
+          var puntitos=20;
+          for(var x = 0; x < width; x = x + width/puntitos) {
+              for(var y = 0; y < height; y = y + height/puntitos) {
+                  var px = x + Math.random()*width/puntitos;
+                  var py = y + Math.random()*height/puntitos;
+                  var p = {x: px, originX: px, y: py, originY: py };
+                  points.push(p);
+              }
+          }
+
+          // for each point find the 5 closest points
+          for(var i = 0; i < points.length; i++) {
+              var closest = [];
+              var p1 = points[i];
+              for(var j = 0; j < points.length; j++) {
+                  var p2 = points[j]
+                  if(!(p1 == p2)) {
+                      var placed = false;
+                      for(var k = 0; k < 5; k++) {
+                          if(!placed) {
+                              if(closest[k] == undefined) {
+                                  closest[k] = p2;
+                                  placed = true;
+                              }
+                          }
+                      }
+
+                      for(var k = 0; k < 5; k++) {
+                          if(!placed) {
+                              if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                                  closest[k] = p2;
+                                  placed = true;
+                              }
+                          }
+                      }
+                  }
+              }
+              p1.closest = closest;
+          }
+
+          // assign a circle to each point
+          for(var i in points) {
+              var c = new Circle(points[i], 2+Math.random()*2, 'rgba(200,200,2,2)');
+              points[i].circle = c;
+          }
+      }
+
+      // Event handling
+      function addListeners() {
+          if(!('ontouchstart' in window)) {
+              window.addEventListener('mousemove', mouseMove);
+          }
+          window.addEventListener('scroll', scrollCheck);
+          window.addEventListener('resize', resize);
+      }
+
+      function mouseMove(e) {
+          var posx = posy = 0;
+          if (e.pageX || e.pageY) {
+              posx = e.pageX;
+              posy = e.pageY;
+          }
+          else if (e.clientX || e.clientY)    {
+              posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+              posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+          }
+          target.x = posx;
+          target.y = posy;
+      }
+
+      function scrollCheck() {
+          if(document.body.scrollTop > height) animateHeader = false;
+          else animateHeader = true;
+      }
+
+      function resize() {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          largeHeader.style.height = height+'px';
+          canvas.width = width;
+          canvas.height = height;
+      }
+
+      // animation
+      function initAnimation() {
+          animate();
+          for(var i in points) {
+              shiftPoint(points[i]);
+          }
+      }
+
+      function animate() {
+          if(animateHeader) {
+              ctx.clearRect(0,0,width,height);
+              for(var i in points) {
+                  // detect points in range
+                  if(Math.abs(getDistance(target, points[i])) < 4000) {
+                      points[i].active = 0.3;
+                      points[i].circle.active = 0.6;
+                  } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                      points[i].active = 0.1;
+                      points[i].circle.active = 0.3;
+                  } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                      points[i].active = 0.02;
+                      points[i].circle.active = 0.1;
+                  } else {
+                      points[i].active = 0;
+                      points[i].circle.active = 0;
+                  }
+
+                  drawLines(points[i]);
+                  points[i].circle.draw();
+              }
+          }
+          requestAnimationFrame(animate);
+      }
+
+      function shiftPoint(p) {
+          TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*50,
+              y: p.originY-50+Math.random()*50, ease:Circ.easeInOut,
+              onComplete: function() {
+                  shiftPoint(p);
+              }});
+      }
+
+      // Canvas manipulation
+      function drawLines(p) {
+          if(!p.active) return;
+          for(var i in p.closest) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p.closest[i].x, p.closest[i].y);
+              ctx.strokeStyle = 'rgba(200,200,200,'+ p.active+')';
+              ctx.stroke();
+          }
+      }
+
+      function Circle(pos,rad,color) {
+          var _this = this;
+
+          // constructor
+          (function() {
+              _this.pos = pos || null;
+              _this.radius = rad || null;
+              _this.color = color || null;
+          })();
+
+          this.draw = function() {
+              if(!_this.active) return;
+              ctx.beginPath();
+              ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+              ctx.fillStyle = 'rgba(200,200,200,'+ _this.active+')';
+              ctx.fill();
+          };
+      }
+
+      // Util
+      function getDistance(p1, p2) {
+          return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+      }
+
+  })();
+
+
+
+      </script>
+
     </body>
+
+
+</html>
