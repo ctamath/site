@@ -33,25 +33,28 @@
                         <a href="#page" id="brandname" class="navbar-brand brand hidden-xs visible-sm visible-md visible-lg" target="_self"><i class="fa fa-arrow-circle-up"></i>Central Toronto Academy</a>
                         <a href="#page" id="acronymbrandname" class="navbar-brand brand hidden-sm hidden-md hidden-lg"><i class="fa fa-arrow-circle-up"></i>CTA</a>
                     </div>
-                    <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                    <div id="navbar-collapse-02" class="collapse navbar-collapse" style="overflow-y:visible;">
                         <ul class="nav navbar-nav" style="/* border-radius: 10px */">
-                            <li class="dropdown">
+                            <li class="dropdown" data-bind="enable: !noResults()" id="goaway">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> About<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#Welcome" class="smooth-scroll">Welcome</a>
+                                        <a href="#Welcome" class="smooth-scroll closeonclick">Welcome</a>
                                     </li>
                                     <li>
-                                        <a href="#PrincipalsMessage" class="smooth-scroll">Principal's Message </a>
+                                        <a href="#PrincipalsMessage" class="smooth-scroll closeonclick">Principal's Message </a>
                                     </li>
                                     <li>
-                                        <a href="#Vision" class="smooth-scroll">Mission Statement </a>
+                                        <a href="#Vision" class="smooth-scroll closeonclick">Mission Statement </a>
                                     </li>
                                     <li>
-                                        <a href="#History" class="smooth-scroll">History </a>
+                                        <a href="#History" class="smooth-scroll closeonclick">History </a>
                                     </li>
                                     <li>
-                                        <a href="https://goo.gl/WRCkgv" target="_blank">Student Agenda <i class="fa fa-cloud-download"></i></a>
+                                        <a href="#Council" class="smooth-scroll closeonclick">School Council </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://goo.gl/WRCkgv" target="_blank">Student Agenda &nbsp;<i class="fa fa-cloud-download"></i></a>
                                     </li>
                                 </ul>
                             </li>
@@ -59,10 +62,10 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar-minus-o"></i> Events <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#Calendar" class="smooth-scroll">Calendar</a>
+                                        <a href="#Calendar" class="smooth-scroll closeonclick">Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="#Eventspotlight" class="smooth-scroll">Event Spotlight</a>
+                                        <a href="#Eventspotlight" class="smooth-scroll closeonclick">Event Spotlight</a>
                                     </li>
                                 </ul>
                             </li>
@@ -70,34 +73,31 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i> Programs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#Pre-Ap" class="smooth-scroll">Pre-AP</a>
+                                        <a href="#Pre-Ap" class="smooth-scroll closeonclick">Pre-AP</a>
                                     </li>
                                     <li>
-                                        <a href="#AP" class="smooth-scroll">AP</a>
+                                        <a href="#AP" class="smooth-scroll closeonclick">AP</a>
                                     </li>
                                     <li>
-                                        <a href="#Arts" class="smooth-scroll">Arts</a>
+                                        <a href="#Arts" class="smooth-scroll closeonclick">Arts</a>
                                     </li>
                                     <li>
-                                        <a href="#SHSM" class="smooth-scroll">SHSM</a>
+                                        <a href="#SHSM" class="smooth-scroll closeonclick">SHSM</a>
                                     </li>
                                     <li>
-                                        <a href="#REACH" class="smooth-scroll">REACH</a>
+                                        <a href="#REACH" class="smooth-scroll closeonclick">REACH</a>
                                     </li>
                                     <li>
-                                        <a href="#International" class="smooth-scroll">International & ELL</a>
+                                        <a href="#International" class="smooth-scroll closeonclick">International & ELL</a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#French" class="smooth-scroll closeonclick">French Programming</a>
                                     </li>
                                     <li>
-                                        <a href="#coop" class="smooth-scroll">Cooperative Education</a>
+                                        <a href="#Extracurriculars" class="smooth-scroll closeonclick">Extracurriculars</a>
                                     </li>
                                     <li>
-                                        <a href="#BikeProgram" class="smooth-scroll">Bike Program</a>
-                                    </li>
-                                    <li>
-                                        <a href="#Extracurriculars" class="smooth-scroll">Extracurriculars</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=0ByNBUkPN7VZVa2FlOE1pY0lQS1k" target="_blank">Program Book <i class="fa fa-cloud-download"></i></a>
+                                        <a href="https://drive.google.com/open?id=0ByNBUkPN7VZVa2FlOE1pY0lQS1k" target="_blank">Program Book &nbsp;<i class="fa fa-cloud-download"></i></a>
                                     </li>
                                 </ul>
                             </li>
@@ -105,16 +105,16 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tv"></i> Media <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#Gallery" class="smooth-scroll">Student Gallery</a>
+                                        <a href="#Gallery" class="smooth-scroll closeonclick">Student Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="#News" class="smooth-scroll">CTA in The News</a>
+                                        <a href="#News" class="smooth-scroll closeonclick">CTA in The News</a>
                                     </li>
                                     <li>
-                                        <a href="#Twitter" class="smooth-scroll">CTA Twitter</a>
+                                        <a href="#Twitter" class="smooth-scroll closeonclick">CTA Twitter</a>
                                     </li>
                                     <li>
-                                        <a href="#Instagram" class="smooth-scroll">CTA Instagram</a>
+                                        <a href="#Instagram" class="smooth-scroll closeonclick">CTA Instagram</a>
                                     </li>
                                 </ul>
                             </li>
@@ -122,17 +122,20 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i> Contact <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#DepartmentSites" class="smooth-scroll">Department Websites</a>
+                                        <a href="http://tdsb.us16.list-manage.com/subscribe?u=fb7fe64115f7106eb966030b0&id=70c64ba2d7" class="closeonclick" data-toggle="modal" data-target="#DigitalNewsletter">Digital Newsletter &nbsp;<i class="material-icons" style="font-size:16px;">important_devices</i></a>
                                     </li>
                                     <li>
-                                        <a href="#EducationLinks" class="smooth-scroll">Education Links</a>
+                                        <a href="#DepartmentSites" class="smooth-scroll closeonclick">Department Websites</a>
                                     </li>
                                     <li>
-                                        <a href="#Horizon" class="smooth-scroll">Horizon Alternative</a>
+                                        <a href="#EducationLinks" class="smooth-scroll closeonclick">Education Links</a>
                                     </li>
                                     <li>
-                                        <a href="#ContactCTA" class="smooth-scroll">Contact CTA</a>
+                                        <a href="#Horizon" class="smooth-scroll closeonclick">Horizon Alternative</a>
                                     </li>
+                                    <li>
+                                        <a href="#ContactCTA" class="smooth-scroll closeonclick">Contact CTA</a>
+                                    </li>                                     
                                 </ul>
                             </li>
                             <li></li>
@@ -205,36 +208,32 @@
                     <div class="well" style="font-size: 16px;padding-bottom: 5px">
                         <p>Driven by our Specialist High Skills Major, Bike, and Cooperative education programs, CTA has brought experiential learning to the forefront of all classes by partnering with numerous industry professionals and organizations. By putting theory into practice, students are deeply engaged in the material they are studying and gain a lasting academic experience</p>
                     </div>
-                    <div style="padding-left: 0" class="col-sm-12 col-xs-12 col-md-12">
-                        <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 10px;text-align: center">
-                            <div class="buttoncenter">
-                                <span id="PrincipalsMessage" class="anchorfix"></span>
-                                <a class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Messagemodal"><i class="fa fa-handshake-o"></i> Principal's Message</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 10px;text-align: center">
-                            <div class="buttoncenter">
-                                <span id="Vision" class="anchorfix"></span>
-                                <button type="button" class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Missionmodal">
-                                    <i class="fa fa-map-o"></i> &nbsp;Mission Statement
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 10px;text-align: center">
-                            <div class="buttoncenter">
-                                <span id="History" class="anchorfix"></span>
-                                <button type="button" class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Historymodal">
-                                    <i class="fa fa-history"></i>  School History
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-md-3 calendarcontrol hidden-sm hidden-xs" style="margin-top: 30px">
+                <div class="calendarcontrol hidden-sm hidden-xs col-md-3" style="margin-top: 37px;overflow: hidden">
                     <span id="Calendar" class="anchorfix"></span>
-                    <!-- start feedwind code -->
-                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47328/"></script>
+                    <!-- start feedwind code -->                     
+                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47328/"></script>                     
                     <!-- end feedwind code -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-3 col-lg-3 col-sm-6" style="text-align: center;padding-bottom: 10px">
+                    <span id="PrincipalsMessage" class="anchorfix"></span>
+                    <a class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Messagemodal"><i class="material-icons" style="font-size: 17px; vertical-align: middle !important;">message</i> &nbsp;Principal's Message  </a> 
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6" style="text-align: center;padding-bottom: 10px">
+                    <span id="Vision" class="anchorfix"></span>
+                    <a class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Missionmodal"><i class="fa fa-map-o"></i> &nbsp;Mission Statement</a> 
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6" style="text-align: center;padding-bottom: 10px">
+                    <span id="History" class="anchorfix"></span>
+                    <a class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Historymodal"><i class="fa fa-history"></i>  &nbsp;School History</a> 
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6" style="text-align: center;padding-bottom: 30px">
+                    <span id="Council" class="anchorfix"></span>
+                    <a class="btn btn-info buttoncta buttonmagic jumpshadow smallbuttoncta" data-toggle="modal" data-target="#Messagemodal"><i class="fa fa-handshake-o"></i> &nbsp;School Council</a> 
                 </div>
             </div>
         </div>
@@ -250,29 +249,7 @@
                 <div class="col-md-12 " style="margin-top: 0;padding-top: 0">
                     <section class="new-deal" data-pgc="listing grid with hover" style="margin-bottom: 0px;padding-bottom: 0;color: #ffffff;margin-top: 0;padding-top: 0">
                         <!-- Event 1-->
-                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0" style=";p;">
-                            <div class="item-slide">
-                                <div class="box-img">
-                                    <img src="https://dl.dropbox.com/s/33lf8b45ehu33ff/Optimized-computerflush.jpeg?dl=0" alt="spotlight1" />
-                                    <div class="text-wrap" style="color: #ffffff">
-                                        <h4>Interim Report Distribution</h4>
-                                        <div class="desc">
-                                            <h3>October 12</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide-hover" style="color: #ffffff">
-                                    <div class="text-wrap" style="color: #ffffff">
-                                        <p style="color: #ffffff;font-weight: 300">Students will receive their Interim Report Cards in Period 1.</p>
-                                        <div class="desc">
-                                            <span>From</span>
-                                            <h3>9:00am</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-sm-offset-3 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0" style=";p;">
+                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0" style=";p;">
                             <div class="item-slide">
                                 <div class="box-img">
                                     <img src="https://dl.dropbox.com/s/ymy7m7wld8in6f2/grad4-min.png?dl=0" alt="spotlight2" />
@@ -294,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0" style=";p;">
+                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0" style=";p;">
                             <div class="item-slide">
                                 <div class="box-img">
                                     <img src="https://dl.dropbox.com/s/v3ohwvnetook0lo/Optimized-student.jpeg?dl=0" alt="spotlight3">
@@ -316,6 +293,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-4 deal deal-block col-sm-6 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-pull-0 col-md-pull-0 col-lg-pull-0 col-sm-offset-3" style=";p;">
+                            <div class="item-slide">
+                                <div class="box-img">
+                                    <img src="https://dl.dropbox.com/s/33lf8b45ehu33ff/Optimized-computerflush.jpeg?dl=0" alt="spotlight1" />
+                                    <div class="text-wrap" style="color: #ffffff">
+                                        <h4>Grade 8 Guidance Counsellors Visit</h4>
+                                        <div class="desc">
+                                            <h3>October 27</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-hover" style="color: #ffffff">
+                                    <div class="text-wrap" style="color: #ffffff">
+                                        <p style="color: #ffffff;font-weight: 300">We weclome Grade 8 Guidance Counsellors to CTA.</p>
+                                        <div class="desc">
+                                            <span>From</span>
+                                            <h3>9:00am-12:00pm</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- End Event 1-->
                         <!-- Event 2 -->
                         <!-- End Event 2 -->
@@ -330,8 +329,8 @@
         <div class="row hidden-md hidden-lg">
             <div class="container">
                 <div class="col-md-4 calendarcontrolsmall" style="padding-top: 30px">
-                    <!-- start feedwind code -->
-                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47329/"></script>
+                    <!-- start feedwind code -->                     
+                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47329/"></script>                     
                     <!-- end feedwind code -->
                 </div>
             </div>
@@ -373,7 +372,7 @@
                     <div class="cardicon cardstuff arts">
                         <i class="fa fa-paint-brush"></i>
                         <span id="Arts" class="anchorfix"></span>
-                        <h3 style="text-align: center;margin-top: 15px">Arts</h3>
+                        <h3 style="text-align: center;margin-top: 15px">Arts Programming</h3>
                         <p>Student voice, personal expression, acceptance and inclusion are at the core of our arts programming. </p>
                         <div>
                             <button type="button" class="btn btn-info cardbutton buttonmagic jumpshadow" data-toggle="modal" data-target="#Artsmodal">Read More</button>
@@ -413,31 +412,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-offset-0 col-md-offset-0 col-sm-6 col-md-4 col-lg-4 col-xs-10 col-xs-offset-1 col-sm-offset-0" style="padding-left: 0;padding-right: 0">
-                    <div class="cardicon cardstuff coop">
-                        <i class="material-icons">business</i>
-                        <span id="coop" class="anchorfix"></span>
-                        <h3 style="text-align: center;margin-top: 15px">Co-Op</h3>
-                        <p>Cooperative Education is an opportunity for students to combine academics with industry experience.</p>
-                        <div>
-                            <button type="button" class="btn btn-info cardbutton buttonmagic jumpshadow" data-toggle="modal" data-target="#coopmodal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-offset-0 col-md-offset-0 col-sm-6 col-md-4 col-lg-4 col-xs-10 col-xs-offset-1 col-sm-offset-0" style="padding-left: 0;padding-right: 0">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xs-10 col-xs-offset-1 col-sm-offset-0 col-md-offset-2 col-lg-offset-2" style="padding-left: 0;padding-right: 0">
                     <div class="cardicon cardstuff bike">
-                        <i class="material-icons">directions_bike</i>
-                        <span id="BikeProgram" class="anchorfix"></span>
-                        <h3 style="text-align: center;margin-top: 15px">Bike Program</h3>
-                        <p>Our Bike Program is a unique collaboration with CultureLink, Cycle Toronto, and others. &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                        <i class="material-icons">question_answer</i>
+                        <span id="French" class="anchorfix"></span>
+                        <h3 style="text-align: center;margin-top: 15px">French Programming</h3>
+                        <p>French programming at CTA develops a strong a sense of Canadian bilingual culture.</p>
                         <div>
                             <button type="button" class="btn btn-info cardbutton buttonmagic jumpshadow" data-toggle="modal" data-target="#bikemodal">Read More</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-md-offset-0 col-lg-offset-0 col-xs-10 col-xs-offset-1 col-sm-offset-3" style="padding-left: 0;padding-right: 0">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-md-offset-0 col-lg-offset-0 col-xs-10 col-xs-offset-1 col-sm-offset-0" style="padding-left: 0;padding-right: 0">
                     <div class="cardicon cardstuff Extracurriculars">
-                        <i class="material-icons">fitness_center</i>
+                        <i class="material-icons">directions_bike</i>
                         <span id="Extracurriculars" class="anchorfix"></span>
                         <h3 style="text-align: center;margin-top: 15px">Extracurriculars</h3>
                         <p>Extracurriculars develop well-rounded students with confidence to explore new activities and experiences.</p>
@@ -450,271 +438,52 @@
         </div>
         <!-- End Programs -->
         <!-- Student Gallery -->
-        <section>
-            <section id="team3" class="team3" data-pgc="team-6">
-                <section class="section-padding">
-                    <div class="container">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 10px">
-                            <span id="Gallery" class="anchorfix"></span>
-                            <h1 class="sectionheader" style="margin-top: 0">Student Gallery</h1>
-                        </div>
-                        <section id="portfolio" class="portfolio1" data-pgc="portfolio-1" style="background: transparent">
-                            <div class="container" style="margin-left: -15px">
-                                <div class="row" style="margin-left: -15px">
-                                    <div class="col-md-12 text-center">
-                                        <!-- /.portfolioFilter -->
-                                        <div class="portfolio-items1" style="position: relative; height: 855px;">
-                                            <div class="single-item web-design motion-video" style="width: 285px; height: 285px; position: absolute; left: 0px; top: 0px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/0pr37qia350hq0o/1-min.jpg?dl=0" alt="gallery1">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item motion-video" style="width: 285px; height: 285px; position: absolute; left: 285px; top: 0px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/o3rernk7gl53i55/2-min.jpg?dl=0" alt="gallery2">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design graphic" style="width: 285px; height: 285px; position: absolute; left: 570px; top: 0px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/f45gchhvs3qhsnh/3-min.jpg?dl=0" alt="gallery3">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design graphic" style="width: 285px; height: 285px; position: absolute; left: 855px; top: 0px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/8aea3mhxvrnqmqf/4-min.jpg?dl=0" alt="gallery4">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design motion-video" style="width: 285px; height: 285px; position: absolute; left: 0px; top: 285px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/mgmodxxhc1oryu9/5-min.jpg?dl=0" alt="gallery5">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design graphic" style="width: 285px; height: 285px; position: absolute; left: 285px; top: 285px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/dhu9od4jk7701yk/6-min.jpg?dl=0" alt="gallery6">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design" style="width: 285px; height: 285px; position: absolute; left: 570px; top: 285px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/l4gzd7ral1bess4/7-min.jpg?dl=0" alt="gallery7">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item graphic photography" style="width: 285px; height: 285px; position: absolute; left: 855px; top: 285px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/0ge70j4s2k6i33o/8-min.jpg?dl=0" alt="gallery8">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item graphic motion-video photography" style="width: 285px; height: 285px; position: absolute; left: 0px; top: 570px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/kgrwjqwfuegk5zz/9-min.jpg?dl=0" alt="gallery9">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item graphic" style="width: 285px; height: 285px; position: absolute; left: 285px; top: 570px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/6h9zh4vk3z2b4rb/10-min.jpg?dl=0" alt="gallery10">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Student Name</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item  web-design" style="width: 285px; height: 285px; position: absolute; left: 570px; top: 570px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/hqnxjdgb2jqqmi6/11-min.jpg?dl=0" alt="gallery11">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-item web-design photography" style="width: 285px; height: 285px; position: absolute; left: 855px; top: 570px;">
-                                                <div class="project-content">
-                                                    <img class="img-responsive" src="https://dl.dropbox.com/s/0m1wpk5cqton2mc/12-min.jpg?dl=0" alt="gallery12">
-                                                    <div class="project-overflow center-vertically text-center">
-                                                        <strong>Project Title</strong>
-                                                        <p>Branding, Graphic Design</p>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <i class="fa fa-heart"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-link"></i>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fa fa-camera"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+        <div class="row backgroundgray" style="padding-top: 10px;padding-bottom: 5px">
+            <span id="Gallery" class="anchorfix"></span>
+            <h1 class="sectionheader" style="margin-bottom: 20px;">Student Gallery</h1> 
+            <div class="container">
+                <div class="well" style="font-size: 16px;padding-bottom: 15px;margin-left: 15px;margin-right: 15px">
+                    <p style="text-align: center">This Gallery below is regularly updated with new content and links to online student profiles.&nbsp;</p>
+                    <p style="text-align: center">Are you a student interested in seeing your work featured here? Click the link below to submit your work for consideration.</p>
+                    <div style="text-align: center">
+                        <a class="btn btn-info cardbutton buttonmagic jumpshadow" href="https://goo.gl/forms/23QHoaFsSLpK0Xks1">  Submit Work</a>
                     </div>
-                    <!--//container-->
-                </section>
-                <!--//section padding-->
-            </section>
-        </section>
+                </div>
+                <div class="col-md-4 col-md-offset-0 col-lg-offset-0 col-xs-offset-1 col-xs-10 col-sm-4 col-sm-offset-0" style="margin-bottom: 20px">
+                    <div class="piccontainer">
+                        <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/2bd19uaafthhigs/Geometric.jpg?dl=0" alt="Gallery">
+                        <div class="captionoverlay">
+                            <div class="captiontext">
+                                <p>
+                Rainbow Geometry</p>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col-md-4 col-md-offset-0 col-lg-offset-0 col-xs-offset-1 col-xs-10 col-sm-4 col-sm-offset-0" style="margin-bottom: 20px">
+                    <div class="piccontainer">
+                        <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/o17lx02whu2a2ue/Giraffe.jpg?dl=0" alt="Gallery">
+                        <div class="captionoverlay">
+                            <div class="captiontext">
+                                <p>
+               Africa</p>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col-md-4 col-md-offset-0 col-lg-offset-0 col-xs-offset-1 col-xs-10 col-sm-4 col-sm-offset-0" style="margin-bottom: 20px">
+                    <div class="piccontainer">
+                        <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/qdwwr8z6okmxyjd/PylonRainbow2.jpg?dl=0" alt="Gallery">
+                        <div class="captionoverlay">
+                            <div class="captiontext">
+                                <p>
+                Colour Cone</p>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+        </div>
         <!-- End Student Gallery -->
         <!-- News -->
         <div class="row" style="padding-bottom: 30px">
@@ -725,14 +494,18 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                     <h4>SHSM shoe design &amp; sale</h4>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item iframe" scrolling="no" src="http://toronto.citynews.ca/video/iframe/593482582001/SyxzIeNcgb/5191914589001?auto_play_switch=false"></iframe>
+                    <div>
+                        <a href="http://toronto.citynews.ca/2016/10/31/students-work-together-create-unique-sneaker-design-6ixess-academy/">
+                            <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/3lyauu4eh43t75y/shownew-min.JPG?dl=0" alt="News">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                     <h4>CTA Revitalization</h4>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item iframe" scrolling="no" src="http://www.citynews.ca/video/iframe/593482582001/SyxzIeNcgb/5200819365001?auto_play_switch=false"></iframe>
+                    <div>
+                        <a href="http://toronto.citynews.ca/2016/10/31/students-work-together-create-unique-sneaker-design-6ixess-academy/">
+                            <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/s7s9wjppu6ils7z/revitalizenew-min.JPG?dl=0" alt="News">
+                        </a>                         
                     </div>
                 </div>
             </div>
@@ -747,7 +520,7 @@
                         <div class="col-md-6 text-center">
                             <div>
                                 <span id="Twitter" class="anchorfix"></span>
-                                <h1 class="sectionheader">CTA Twitter <a href="https://twitter.com/CTA_Tweets" style="color: #800080"><i class="fa fa-twitter"></i></a> </h1>
+                                <h1 class="sectionheader">CTA Twitter <a href="https://twitter.com/CTA_Tweets" style="color: #710cff"><i class="fa fa-twitter"></i></a> </h1>
                             </div>
                             <a class="twitter-timeline" href="https://twitter.com/CTA_Tweets" data-widget-id="595439867573723136">Tweets by @CTA_Tweets</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -756,7 +529,7 @@
                             <!-- SnapWidget -->
                             <div>
                                 <span id="Instagram" class="anchorfix"></span>
-                                <h1 class="sectionheader">CTA Instagram <a href="https://twitter.com/https://www.instagram.com/centraltorontoacademy" style="color: purple"><i class="fa fa-instagram"></i></a> </h1>
+                                <h1 class="sectionheader">CTA Instagram <a href="https://twitter.com/https://www.instagram.com/centraltorontoacademy" style="color: #710cff"><i class="fa fa-instagram"></i></a> </h1>
                             </div>
                             <iframe src="https://snapwidget.com/embed/442508" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:400px; height:400px"></iframe>
                         </div>
@@ -994,18 +767,80 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
                 </div>
             </div>
         </div>
-        <div class="modal fade pg-show-modal" id="Filesmodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade pg-show-modal" id="Councilmodal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 class="modal-title"><i class="fa fa-download"></i>&nbsp; Files &amp; Documents</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title"><i class="fa fa-handshake-o"></i>&nbsp; School Council</h3>
                     </div>
                     <div class="modal-body">
-                        <h4>Student Agenda</h4>
-                        <p>The school agenda is a valuable resources containing school schedules, information, procedures and expectations, and a calendar. It can be a powerful organizational tool if used regularly. Please feel free to <a href="https://goo.gl/hv3nbB" target="_blank" style="text-decoration: underline;color: #6400ff">download our student agenda here</a>.</p>
-                        <h4>Programs Booklet</h4>
-                        <p>This booklet is describes the many Programs we have on offer at Central Toronto Academy. It complements the Programs section of this website. Feel free to <a href="https://drive.google.com/open?id=0ByNBUkPN7VZVa2FlOE1pY0lQS1k" target="_blank" style="text-decoration: underline;color: #6400ff">download our Programs Booklet here</a>.<br></p>
+                        <img class="modallogo" src="https://dl.dropbox.com/s/3ov9dcxkwgjqd98/ctalogo-old2.svg?dl=0" alt="ctalogo">
+                        <h4>Forthcoming</h4>
+                        <p>
+        Please check back often for meeting minutes and other details.</p>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 col-md-7">
+</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary buttonmagic jumpshadow modalclose" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade pg-show-modal" id="DigitalNewsletter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title"><i class="material-icons">important_devices</i>&nbsp; Digital Newsletter</h3>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Begin MailChimp Signup Form -->
+                        <p>Our digital newsletter is a subscription based communication service that publishes once a week throughout the school year, and at select times during summer. Through this we share important school events, education partner links, and special opportunities for students and parents of CTA. We have a very active subscription community, so please do consider subscribing. You may unsubscribe at any time.</p>
+                        <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style>
+                        <div id="mc_embed_signup">
+                            <form action="https://tdsb.us16.list-manage.com/subscribe/post?u=fb7fe64115f7106eb966030b0&amp;id=70c64ba2d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                                <div id="mc_embed_signup_scroll"> 
+                                    <div class="indicates-required">
+                                        <span class="asterisk">*</span> indicates required
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL" style="font-size: 16px">Email Address  
+                                            <span class="asterisk">*</span>
+                                        </label>
+                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-FNAME" style="font-size: 16px">First Name </label>
+                                        <input type="text" value="" name="FNAME" id="mce-FNAME">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-LNAME" style="font-size: 16px">
+                                            <p>Last Name </p>
+                                        </label>
+                                        <input type="text" value="" name="LNAME" id="mce-LNAME">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>                                     
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_fb7fe64115f7106eb966030b0_70c64ba2d7" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary buttonmagic jumpshadow modalclose" data-dismiss="modal">Close</button>
@@ -1340,54 +1175,22 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3 class="modal-title"><i class="material-icons">directions_bike</i> Bike Program</h3>
+                        <h3 class="modal-title"><i class="material-icons">question_answer</i> French Programming</h3>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Central Toronto Academy is home to the innovative Bike to School(B2S) Project, a unique collaboration between Central Toronto Academy, CultureLink, Cycle Toronto and the Toronto Cycling Think and Do Tank.<br></p>
-                                <p>
-        Students can earn a credit while gaining valuable technical and leadership skills. Students learn bike maintenance and repair, create bike safety promotional materials, conduct workshops for the annual Bike to School Leadership Camp and support bike club programs across the TDSB.</p>
+                                <p>À CTA nous mettons l’accent à fournir une éducation encrée dans le 21e siècle vis-à-vis l’apprentissage et l’acquisition d’une seconde langue. Nous nous concentrons avec une approche actionnelle qui encourage fortement la communication et les interactions langagières. De suite, nous offrons le français cadre et le français AP. Tous les cours que nous enseignons encourages les élèves à travailler ensembles avec leurs camarades pour développer leurs habiletés de communication à travers les conversations, les discussions, le travail en groupe, le jeu de rôle, et des présentations orales.&nbsp;<br>&nbsp;<br>&nbsp;Nous faisons tout de notre possible d’utiliser des matières authentiques qui sont entremêlées avec la culture française qui rend l’apprentissage non seulement amusant mais aussi pertinent. Bien entendu, la langue française et la culture sont importantes aux Canada. Notre programme développe et renforce une culture canadienne bilingue.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>At CTA we are dedicated to providing a 21 century language learning approach which focuses on communicative language learning. We offer Core French and Pre AP. In all of our courses, our students have many opportunities to work with their peers to develop their communication skills in French through conversations, discussions, group work, role play and oral presentations.&nbsp;<br><br>&nbsp;We strive to use authentic language material that is blended and intertwined with French culture that makes learning both engaging and relevant. French language and culture is important in Canada. Our French program develops a strong a sense of Canadian bilingual culture.</p>
                             </div>
                             <div class="col-md-6">
                                 <div class="piccontainer">
-                                    <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/gq6mycnpls3x755/bike-min.jpg?dl=0" alt="Parks">
+                                    <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/lumpe9r7v2y5l45/frenchgoogle-min.jpg?dl=0" alt="French">
                                     <div class="captionoverlay">
                                         <div class="captiontext">
-                                            <p>Ecofriendly transportation and destinations</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary buttonmagic jumpshadow modalclose" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade pg-show-modal" id="coopmodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3 class="modal-title"><i class="material-icons">directions_bike</i> Cooperative Education</h3>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <p>
-                        Cooperative Education is a great opportunity for students to integrate academic study with hands-on experience in business and industry. Students may choose to earn either 2 or 4 Cooperative Education credits per semester, while developing skills as they transition from school to their chosen career.</p>
-                                <p>Placements vary from semester to semester and are tailored to student interests and career paths.</p>
-                                <p>In the past students have enjoyed placements at hospitals, community centres, banks, law firms, schools, account offices, and the military.</p>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="piccontainer">
-                                    <img class="modalpic jumpshadow" src="https://dl.dropbox.com/s/5drw05jbclmnhzf/coop-min.jpg?dl=0" alt="Hospital Placement">
-                                    <div class="captionoverlay">
-                                        <div class="captiontext">
-                                            <p>Hospital COOP Placements are rewarding!</p>
+                                            <p>French language and French culture!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1427,7 +1230,6 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
                                 <li>Drama Club</li>
                                 <li>Eco-Club</li>
                                 <li>Film Club</li>
-                                <li>Film Club</li>
                                 <li>Gay Straight Alliance</li>
                                 <li>Guitar Club</li>
                                 <li>History Club</li>
@@ -1454,6 +1256,7 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
                                 <li>Soccer</li>
                                 <li>Table Tennis</li>
                                 <li>Track and Field</li>
+                                <li>Ultimate Frisbee</li>
                                 <li>Volleyball</li>
                             </ul>
                             <div class="row" style="margin-top: 30px;bottom: 0">
@@ -1574,12 +1377,17 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
         </div>
     </body>
     <!-- Javascripts -->
-    <script src="https://dl.dropbox.com/s/e5k1gz2ldayt55r/jquery-1.8.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://dl.dropbox.com/s/989dwfq4ekoap0s/smoothscrollattempt.js"></script>
-    <script src="https://dl.dropbox.com/s/qidp3sc3cazbci6/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://dl.dropbox.com/s/txl6qajqtcqz0k5/jquery.flexslider-min.js"></script>
     <script src="https://dl.dropbox.com/s/byt3cg7pn7msp9t/main.js"></script>
     <script src="https://dl.dropbox.com/s/3vk91cphpffm4wp/portfolio-custom1.js"></script>
     <script src="https://dl.dropbox.com/s/mn9hebv5itnuoi5/isotope.pkgd-min.js"></script>
     <script src="https://dl.dropbox.com/s/1gbo79hz4xgqaly/navcollapseonclick.js"></script>
+    <!-- Makes Nav menu dissapear offlick -->
+    <script>$("a.closeonclick").click(function() {$("#goaway").dropdown("toggle"); });</script>
+    <script>
+
+</script>     
 </html>
