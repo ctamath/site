@@ -35,7 +35,30 @@
                     </div>
                     <div id="navbar-collapse-02" class="collapse navbar-collapse" style="overflow-y:visible;">
                         <ul class="nav navbar-nav" style="/* border-radius: 10px */">
-                            <li class="dropdown" data-bind="enable: !noResults()" id="goaway">
+                            <li class="dropdown hidden-md hidden-sm hidden-xs">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#Welcome" class="smooth-scroll closeonclick">Welcome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#PrincipalsMessage" class="smooth-scroll closeonclick">Principal's Message </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Vision" class="smooth-scroll closeonclick">Mission Statement </a>
+                                    </li>
+                                    <li>
+                                        <a href="#History" class="smooth-scroll closeonclick">History </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Council" class="smooth-scroll closeonclick">School Council </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://goo.gl/WRCkgv" target="_blank">Student Agenda &nbsp;<i class="fa fa-cloud-download"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown hidden-lg" data-bind="enable: !noResults()" id="goaway">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i> About<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -61,8 +84,14 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar-minus-o"></i> Events <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li>
+                                    <li class="hidden-md hidden-sm hidden-xs">
                                         <a href="#Calendar" class="smooth-scroll closeonclick">Calendar</a>
+                                    </li>
+                                    <li class="hidden-lg hidden-sm hidden-xs">
+                                        <a href="#Calendar2" class="smooth-scroll closeonclick">Calendar</a>
+                                    </li>
+                                    <li class="hidden-lg hidden-md">
+                                        <a href="#Calendar3" class="smooth-scroll closeonclick">Calendar</a>
                                     </li>
                                     <li>
                                         <a href="#Eventspotlight" class="smooth-scroll closeonclick">Event Spotlight</a>
@@ -216,7 +245,7 @@
                     <!-- end feedwind code -->
                 </div>
                 <div class="hidden-sm hidden-xs col-md-3 hidden-lg" style="margin-top: 37px;overflow: hidden;max-height:510px;">
-                    <span id="Calendar" class="anchorfix"></span>
+                    <span id="Calendar2" class="anchorfix"></span>
                     <!-- start feedwind code -->                     
                     <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47321/"></script>                     
                     <!-- end feedwind code -->
@@ -334,7 +363,8 @@
         <!-- Calendar Widget -->
         <div class="row hidden-md hidden-lg">
             <div class="container">
-                <div class="col-md-4 calendarcontrolsmall col-xs-10 col-xs-offset-1" style="padding-top: 30px">
+                <div class="col-md-4 calendarcontrolsmall col-xs-10 col-xs-offset-1" style="padding-top: 30px;overflow: hidden;max-height:335px;">
+                    <span id="Calendar3" class="anchorfix"></span>
                     <!-- start feedwind code -->                     
                     <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="47329/"></script>                     
                     <!-- end feedwind code -->
@@ -601,10 +631,10 @@
                     <h1 class="sectionheader" style="text-align: left">Central Toronto Academy</h1>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://goo.gl/maps/PvL6yVY4gyu_"><span class="fa-stack "><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-home fa-stack-1x"></i></span><span> Address: 570 Shaw St, Toronto, ON, Canada M6G 3L6 </span></a>
+                            <a href="https://www.google.ca/maps/place/Central+Toronto+Academy/@43.6574228,-79.4240198,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34f6bd7d8fff:0x9d82e8b74e650743!8m2!3d43.6574228!4d-79.4218311"><span class="fa-stack "><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-home fa-stack-1x"></i></span><span> Address: 570 Shaw St, Toronto, ON, Canada M6G 3L6 </span></a>
                         </li>
                         <li>
-                            <a href="centraltorontoacademy@tdsb.on.ca" target="_top"><span class="fa-stack "><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x"></i></span><span> Email: centraltorontoacademy@tdsb.on.ca</span></a>
+                            <a href="mailto:centraltorontoacademy@tdsb.on.ca"><span class="fa-stack "><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x"></i></span><span> Email: centraltorontoacademy@tdsb.on.ca</span></a>
                         </li>
                         <li>
                             <span class="fa-stack "><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-fax fa-stack-1x"></i></span>
@@ -944,7 +974,7 @@ Above all, we encourage you to ask questions. Come by and visit us. We look forw
                                     <div class="captionoverlay">
                                         <div class="captiontext">
                                             <p>
-                Hyptothesis testing in AP Calculus!</p>
+                Optimization in AP Calculus!</p>
                                         </div>
                                     </div>
                                 </div>
